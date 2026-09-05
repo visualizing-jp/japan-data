@@ -28,7 +28,7 @@
 | employment | 日本人はどんな働き方をしてきたか | `../japan-data-employment/` | https://github.com/visualizing-jp/japan-data-employment | https://japan-data-employment.visualizing.jp | 完成予定/実装中 |
 | marriage | 日本人はいつ結婚し、別れてきたか | `../japan-data-marriage/` | https://github.com/visualizing-jp/japan-data-marriage | https://japan-data-marriage.visualizing.jp | 完成予定/実装中 |
 | spending | 日本人は何にお金を使ってきたか | `../japan-data-spending/` | https://github.com/visualizing-jp/japan-data-spending | https://japan-data-spending.visualizing.jp | 骨格 |
-| disease | 日本人はどんな病気で病院にかかってきたか | `../japan-data-disease/` | https://github.com/visualizing-jp/japan-data-disease | https://japan-data-disease.visualizing.jp | 骨格 |
+| disease | 日本人はどんな病気で病院にかかってきたか | `../japan-data-disease/` | https://github.com/visualizing-jp/japan-data-disease | https://japan-data-disease.visualizing.jp | 完成予定/実装中 |
 | commuting | 日本人はどう通勤・通学してきたか | `../japan-data-commuting/` | https://github.com/visualizing-jp/japan-data-commuting | https://japan-data-commuting.visualizing.jp | 骨格 |
 | crime | 日本ではどんな犯罪が起きてきたか | `../japan-data-crime/` | https://github.com/visualizing-jp/japan-data-crime | https://japan-data-crime.visualizing.jp | 骨格 |
 | traffic-accidents | 日本人は交通事故でどれだけ傷ついてきたか | `../japan-data-traffic-accidents/` | https://github.com/visualizing-jp/japan-data-traffic-accidents | https://japan-data-traffic-accidents.visualizing.jp | 完成予定/実装中 |
