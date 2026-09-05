@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <rect x="44" y="28" width="72" height="64" rx="4"/>
-  <circle cx="80" cy="52" r="14"/>
-  <path d="M58 84c6-10 16-14 22-14s16 4 22 14"/>
-  <path d="M44 40h72"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke="#303b39" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+  <defs><pattern id="paper" width="1" height="1" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#f1f2ee" stroke="none"/></pattern></defs>
+  <ellipse cx="160" cy="90" rx="56" ry="56" /><ellipse cx="160" cy="90" rx="26" ry="56" stroke-width=".8"/><path d="M104 90h112M111 65c27 10 70 10 98 0M111 115c27-10 70-10 98 0M160 34v112" stroke-width=".8"/><path d="M164 57l13 5 1 11 15 6-5 9-11-1-7 12-12-4-9-18 8-8ZM123 98l17 5 5 19-9 10M201 109l-8 11 6 9" stroke-width="1.4"/><path d="M98 163v-20l22-19 22 19v20M93 145l27-24 27 24M109 163v-18h20v18M181 164v-23l22-19 22 19v23M176 143l27-24 27 24M195 164v-18h16v18" fill="url(#paper)"/><path d="M83 175h155m-143 4h113m-103 3h70" stroke-width=".65" opacity=".65"/><path d="M122 152v7m4-7v7M214 145v15m4-13v13M111 82c1-9 5-18 9-23" stroke-width=".65" opacity=".65"/>
 </svg>

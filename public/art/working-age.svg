@@ -1,7 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <!-- hourglass -->
-  <path d="M56 28h48"/>
-  <path d="M56 92h48"/>
-  <path d="M60 28c0 18 20 26 20 32s-20 14-20 32"/>
-  <path d="M100 28c0 18-20 26-20 32s20 14 20 32"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke="#303b39" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+  <defs><pattern id="paper" width="1" height="1" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#f1f2ee" stroke="none"/></pattern></defs>
+  <path d="M105 70c-10-12-6-37 12-40 23-3 32 22 21 39M101 49c9-13 22-16 37-7M111 69v13m20-13v13M98 161l3-52c0-18 36-24 42 0l9 26 23 2-1 11h-30l-15-25M101 156h41m-34-39-3 41M112 160l-3 20m26-20 5 20" /><path d="M100 88l19 14 19-14M120 104v45M179 179v-35c0-11 15-11 15 0" /><ellipse cx="111" cy="55" rx="7" ry="7" /><ellipse cx="129" cy="55" rx="7" ry="7" /><path d="M118 55h4m-6 17h11" /><rect x="197" y="104" width="42" height="57" rx="3" /><path d="M207 104v-9h22v9" /><path d="M203 112v41h30M105 44l-4 10" stroke-width=".65" opacity=".65"/><path d="M85 184h161m-149 4h119m-109 3h76" stroke-width=".65" opacity=".65"/><path d="M110 147v7" stroke-width=".65" opacity=".65"/><path d="M113 147v7" stroke-width=".65" opacity=".65"/><path d="M116 147v7" stroke-width=".65" opacity=".65"/><path d="M119 147v7" stroke-width=".65" opacity=".65"/><path d="M122 147v7" stroke-width=".65" opacity=".65"/><path d="M125 147v7" stroke-width=".65" opacity=".65"/><path d="M215 117v35m4-35v35m4-35v35" stroke-width=".65" opacity=".65"/>
 </svg>

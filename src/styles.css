@@ -56,3 +56,9 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* A quiet plate behind each original line drawing keeps fine strokes readable. */
+.card-art {
+  aspect-ratio: 8 / 5;
+  background: #f1f2ee;
+}
