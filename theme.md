@@ -31,7 +31,7 @@
 | disease | 日本人はどんな病気で病院にかかってきたか | `../japan-data-disease/` | https://github.com/visualizing-jp/japan-data-disease | https://japan-data-disease.visualizing.jp | 骨格 |
 | commuting | 日本人はどう通勤・通学してきたか | `../japan-data-commuting/` | https://github.com/visualizing-jp/japan-data-commuting | https://japan-data-commuting.visualizing.jp | 骨格 |
 | crime | 日本ではどんな犯罪が起きてきたか | `../japan-data-crime/` | https://github.com/visualizing-jp/japan-data-crime | https://japan-data-crime.visualizing.jp | 骨格 |
-| traffic-accidents | 日本人は交通事故でどれだけ傷ついてきたか | `../japan-data-traffic-accidents/` | https://github.com/visualizing-jp/japan-data-traffic-accidents | https://japan-data-traffic-accidents.visualizing.jp | 骨格 |
+| traffic-accidents | 日本人は交通事故でどれだけ傷ついてきたか | `../japan-data-traffic-accidents/` | https://github.com/visualizing-jp/japan-data-traffic-accidents | https://japan-data-traffic-accidents.visualizing.jp | 完成予定/実装中 |
 | waste | 日本はどれだけごみを出してきたか | `../japan-data-waste/` | https://github.com/visualizing-jp/japan-data-waste | https://japan-data-waste.visualizing.jp | 骨格 |
 | births | 日本人はどれだけ子どもを産んできたか | `../japan-data-births/` | https://github.com/visualizing-jp/japan-data-births | https://japan-data-births.visualizing.jp | 骨格 |
 | schools | 日本人はどんな学校に通ってきたか | `../japan-data-schools/` | https://github.com/visualizing-jp/japan-data-schools | https://japan-data-schools.visualizing.jp | 骨格 |
