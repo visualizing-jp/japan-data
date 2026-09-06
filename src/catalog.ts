@@ -77,8 +77,8 @@ export const CATALOG: CatalogEntry[] = [
     source: "人口動態統計",
     period: "—",
     category: "life",
-    status: "pending",
-    url: null,
+    status: "published",
+    url: "https://japan-data-births.visualizing.jp/",
     art: "/art/births.svg",
   },
   {
@@ -139,8 +139,8 @@ export const CATALOG: CatalogEntry[] = [
     source: "学校基本調査",
     period: "—",
     category: "work",
-    status: "pending",
-    url: null,
+    status: "published",
+    url: "https://japan-data-schools.visualizing.jp/",
     art: "/art/schools.svg",
   },
   {
@@ -241,8 +241,8 @@ export const CATALOG: CatalogEntry[] = [
     source: "一般廃棄物処理実態調査",
     period: "—",
     category: "home",
-    status: "pending",
-    url: null,
+    status: "published",
+    url: "http://japan-data-waste.visualizing.jp/",
     art: "/art/waste.svg",
   },
   {
@@ -251,8 +251,8 @@ export const CATALOG: CatalogEntry[] = [
     source: "環境統計",
     period: "—",
     category: "home",
-    status: "pending",
-    url: null,
+    status: "published",
+    url: "https://japan-data-environment.visualizing.jp/",
     art: "/art/environment.svg",
   },
 ];
