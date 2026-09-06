@@ -242,7 +242,7 @@ export const CATALOG: CatalogEntry[] = [
     period: "—",
     category: "home",
     status: "published",
-    url: "http://japan-data-waste.visualizing.jp/",
+    url: "https://japan-data-waste.visualizing.jp/",
     art: "/art/waste.svg",
   },
   {
