@@ -34,6 +34,6 @@
 | traffic-accidents | 日本人は交通事故でどれだけ傷ついてきたか | `../japan-data-traffic-accidents/` | https://github.com/visualizing-jp/japan-data-traffic-accidents | https://japan-data-traffic-accidents.visualizing.jp | 完成予定/実装中 |
 | waste | 日本はどれだけごみを出してきたか | `../japan-data-waste/` | https://github.com/visualizing-jp/japan-data-waste | https://japan-data-waste.visualizing.jp | 骨格 |
 | births | 日本人はどれだけ子どもを産んできたか | `../japan-data-births/` | https://github.com/visualizing-jp/japan-data-births | https://japan-data-births.visualizing.jp | 骨格 |
-| schools | 日本人はどんな学校に通ってきたか | `../japan-data-schools/` | https://github.com/visualizing-jp/japan-data-schools | https://japan-data-schools.visualizing.jp | 骨格 |
-| working-age | 日本人は何歳まで働くようになったか | `../japan-data-working-age/` | https://github.com/visualizing-jp/japan-data-working-age | https://japan-data-working-age.visualizing.jp | 骨格 |
+| schools | 日本人はどんな学校に通ってきたか | `../japan-data-schools/` | https://github.com/visualizing-jp/japan-data-schools | https://japan-data-schools.visualizing.jp | 完成予定/実装中 |
+| working-age | 日本人は何歳まで働くようになったか | `../japan-data-working-age/` | https://github.com/visualizing-jp/japan-data-working-age | https://japan-data-working-age.visualizing.jp | 完成予定/実装中 |
 | environment | 日本では空気と水はどれだけきれいになったか | `../japan-data-environment/` | https://github.com/visualizing-jp/japan-data-environment | https://japan-data-environment.visualizing.jp | 骨格 |

@@ -147,10 +147,10 @@ export const CATALOG: CatalogEntry[] = [
     slug: "working-age",
     title: "日本人は何歳まで働くようになったか",
     source: "労働力調査",
-    period: "—",
+    period: "1953–2025",
     category: "work",
-    status: "pending",
-    url: null,
+    status: "published",
+    url: "https://japan-data-working-age.visualizing.jp/",
     art: "/art/working-age.svg",
   },
   {
