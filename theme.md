@@ -16,6 +16,20 @@
 | ★★★☆☆ | **日本人は何歳まで働くようになったか**         | 労働力調査               | 年齢別就業率。「高齢化」を労働側から見る                    |
 | ★★★☆☆ | **日本では空気と水はどれだけきれいになったか** | 環境統計                 | 大気汚染・水質・下水道普及率など                            |
 
+## 法務省統計（5）
+
+粒度は既存シリーズと同じく **1問い＝1リポ**。10統計を10本にはしない。第1波は `prosecution` と `prisons`。続けて `juvenile` と `registry` も公開した。ハブの第4カテゴリ「裁く・守る」に `crime` を移し、`registry` は「暮らす・移る」の `housing` の隣。
+
+| 優先 | 仮タイトル | 主な統計 | 面白さ・可視化の核 |
+| ---- | ---------- | -------- | ------------------ |
+| ★★★★★ | **日本では捕まえた人をどれだけ起訴してきたか** | 検察統計 | 受理→起訴/不起訴/起訴猶予。罪名別の起訴率。`crime` の姉妹 |
+| ★★★★★ | **日本はどれだけ人を刑務所に入れてきたか** | 矯正統計 + 保護統計 | 収容・新受刑の長期減、再入、高齢化、保護観察・仮釈放 |
+| ★★★★☆ | **日本の土地と建物はどう名義が動いてきたか** | 登記統計（不動産主） | 売買・相続・抵当。商業・法人は第3ビュー。`housing` の姉妹 |
+| ★★★☆☆ | **日本では非行少年をどう処遇してきたか** | 少年矯正統計 | 少年院・鑑別所の新収容、処遇課程、長期減少 |
+| ★★★☆☆ | **日本ではどんな人権侵害が届けられてきたか** | 人権侵犯事件統計 | 申告件数、類型、地域。刑事の外側の救済 |
+
+見送り: 戸籍（人口動態と重複）、訟務、供託、婦人補導（2024年終了）、出入国・在留（入管庁へ移行、`foreign-residents` がカバー）。犯罪被害実態調査は `crime` 第2版の暗数候補。裁判の有罪・量刑は最高裁司法統計で、法務省10統計には入らない。
+
 ## テーマ索引（15）
 
 ローカル配置は `japan-data/` の兄弟ディレクトリ（例: `../japan-data-{slug}/`、絶対パスなら `Prj_DataViz_SelfWorks/japan-data-{slug}/`）。
@@ -32,8 +46,20 @@
 | commuting | 日本人はどう通勤・通学してきたか | `../japan-data-commuting/` | https://github.com/visualizing-jp/japan-data-commuting | https://japan-data-commuting.visualizing.jp | 骨格 |
 | crime | 日本ではどんな犯罪が起きてきたか | `../japan-data-crime/` | https://github.com/visualizing-jp/japan-data-crime | https://japan-data-crime.visualizing.jp | 骨格 |
 | traffic-accidents | 日本人は交通事故でどれだけ傷ついてきたか | `../japan-data-traffic-accidents/` | https://github.com/visualizing-jp/japan-data-traffic-accidents | https://japan-data-traffic-accidents.visualizing.jp | 完成予定/実装中 |
-| waste | 日本はどれだけごみを出してきたか | `../japan-data-waste/` | https://github.com/visualizing-jp/japan-data-waste | https://japan-data-waste.visualizing.jp | 骨格 |
-| births | 日本人はどれだけ子どもを産んできたか | `../japan-data-births/` | https://github.com/visualizing-jp/japan-data-births | https://japan-data-births.visualizing.jp | 骨格 |
+| waste | 日本はどれだけごみを出してきたか | `../japan-data-waste/` | https://github.com/visualizing-jp/japan-data-waste | https://japan-data-waste.visualizing.jp | 完成予定/実装中 |
+| births | 日本人はどれだけ子どもを産んできたか | `../japan-data-births/` | https://github.com/visualizing-jp/japan-data-births | https://japan-data-births.visualizing.jp | 完成予定/実装中 |
 | schools | 日本人はどんな学校に通ってきたか | `../japan-data-schools/` | https://github.com/visualizing-jp/japan-data-schools | https://japan-data-schools.visualizing.jp | 完成予定/実装中 |
 | working-age | 日本人は何歳まで働くようになったか | `../japan-data-working-age/` | https://github.com/visualizing-jp/japan-data-working-age | https://japan-data-working-age.visualizing.jp | 完成予定/実装中 |
 | environment | 日本では空気と水はどれだけきれいになったか | `../japan-data-environment/` | https://github.com/visualizing-jp/japan-data-environment | https://japan-data-environment.visualizing.jp | 骨格 |
+
+## 法務省テーマ索引（5）
+
+第1波は `prosecution` と `prisons`。続けて `juvenile` と `registry` も公開済み。`rights` は第2波。
+
+| slug | タイトル | ローカル | GitHub | 想定サブドメイン | ステータス |
+| ---- | -------- | -------- | ------ | ---------------- | ---------- |
+| prosecution | 日本では捕まえた人をどれだけ起訴してきたか | `../japan-data-prosecution/` | https://github.com/visualizing-jp/japan-data-prosecution | https://japan-data-prosecution.visualizing.jp | 公開 |
+| prisons | 日本はどれだけ人を刑務所に入れてきたか | `../japan-data-prisons/` | https://github.com/visualizing-jp/japan-data-prisons | https://japan-data-prisons.visualizing.jp | 公開 |
+| registry | 日本の土地と建物はどう名義が動いてきたか | `../japan-data-registry/` | https://github.com/visualizing-jp/japan-data-registry | https://japan-data-registry.visualizing.jp | 公開 |
+| juvenile | 日本では非行少年をどう処遇してきたか | `../japan-data-juvenile/` | https://github.com/visualizing-jp/japan-data-juvenile | https://japan-data-juvenile.visualizing.jp | 公開 |
+| rights | 日本ではどんな人権侵害が届けられてきたか | `../japan-data-rights/` | https://github.com/visualizing-jp/japan-data-rights | https://japan-data-rights.visualizing.jp | 第2波 |

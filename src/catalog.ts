@@ -8,7 +8,7 @@
  * それ以外は ../japan-data-{slug}/
  */
 
-export type CategoryId = "life" | "work" | "home";
+export type CategoryId = "life" | "work" | "home" | "justice";
 
 export type ProjectStatus = "published" | "pending";
 
@@ -27,6 +27,7 @@ export const CATEGORIES: { id: CategoryId; label: string }[] = [
   { id: "life", label: "生きる・死ぬ" },
   { id: "work", label: "働く・学ぶ" },
   { id: "home", label: "暮らす・移る" },
+  { id: "justice", label: "裁く・守る" },
 ];
 
 export const CATALOG: CatalogEntry[] = [
@@ -186,6 +187,16 @@ export const CATALOG: CatalogEntry[] = [
     art: "/art/housing.svg",
   },
   {
+    slug: "registry",
+    title: "日本の土地と建物はどう名義が動いてきたか",
+    source: "登記統計",
+    period: "2010–2024",
+    category: "home",
+    status: "published",
+    url: "https://japan-data-registry.visualizing.jp/",
+    art: "/art/registry.svg",
+  },
+  {
     slug: "food",
     title: "日本人は何を食べてきたか",
     source: "食料需給表",
@@ -226,16 +237,6 @@ export const CATALOG: CatalogEntry[] = [
     art: "/art/spending.svg",
   },
   {
-    slug: "crime",
-    title: "日本ではどんな犯罪が起きてきたか",
-    source: "犯罪統計・警察白書",
-    period: "—",
-    category: "home",
-    status: "published",
-    url: "https://japan-data-crime.visualizing.jp/",
-    art: "/art/crime.svg",
-  },
-  {
     slug: "waste",
     title: "日本はどれだけごみを出してきたか",
     source: "一般廃棄物処理実態調査",
@@ -254,5 +255,47 @@ export const CATALOG: CatalogEntry[] = [
     status: "published",
     url: "https://japan-data-environment.visualizing.jp/",
     art: "/art/environment.svg",
+  },
+
+  // —— 裁く・守る ——
+  {
+    slug: "crime",
+    title: "日本ではどんな犯罪が起きてきたか",
+    source: "犯罪統計・警察白書",
+    period: "—",
+    category: "justice",
+    status: "published",
+    url: "https://japan-data-crime.visualizing.jp/",
+    art: "/art/crime.svg",
+  },
+  {
+    slug: "prosecution",
+    title: "日本では捕まえた人をどれだけ起訴してきたか",
+    source: "検察統計",
+    period: "1955–2024",
+    category: "justice",
+    status: "published",
+    url: "https://japan-data-prosecution.visualizing.jp/",
+    art: "/art/prosecution.svg",
+  },
+  {
+    slug: "prisons",
+    title: "日本はどれだけ人を刑務所に入れてきたか",
+    source: "矯正統計・保護統計",
+    period: "1946–2024",
+    category: "justice",
+    status: "published",
+    url: "https://japan-data-prisons.visualizing.jp/",
+    art: "/art/prisons.svg",
+  },
+  {
+    slug: "juvenile",
+    title: "日本では非行少年をどう処遇してきたか",
+    source: "少年矯正統計",
+    period: "1949–2024",
+    category: "justice",
+    status: "published",
+    url: "https://japan-data-juvenile.visualizing.jp/",
+    art: "/art/juvenile.svg",
   },
 ];

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke="#303b39" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+  <defs><pattern id="paper" width="1" height="1" patternUnits="userSpaceOnUse"><rect width="1" height="1" fill="#f1f2ee" stroke="none"/></pattern></defs>
+  <path d="M160 36v22M148 36h24" />
+  <circle cx="160" cy="32" r="5" />
+  <path d="M160 58v78" />
+  <path d="M92 68h68M160 68h68" />
+  <path d="M92 68v38c0 18 16 30 34 30s34-12 34-30V68" />
+  <path d="M160 68v38c0 18 16 30 34 30s34-12 34-30V68" />
+  <path d="M109 86h34M177 86h34" stroke-width=".65" opacity=".65" />
+  <rect x="136" y="136" width="48" height="10" rx="1" />
+  <path d="M128 162h64M144 146v16M176 146v16" />
+  <path d="M68 177h184m-172 4h148m-138 3h106" stroke-width=".65" opacity=".65" />
+</svg>
