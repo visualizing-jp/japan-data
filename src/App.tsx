@@ -64,8 +64,6 @@ function SideTitle() {
       </h1>
       <p className="vertical pt-32 font-serif text-[15px] leading-[2] tracking-[0.18em] text-muted">
         公的統計でたどる、長期の変化。
-        <br />
-        問いを選んで開く。
       </p>
       <a
         href="https://visualizing.jp/"
@@ -93,7 +91,7 @@ function MobileTitle() {
         どう生きてきたか
       </h1>
       <p className="font-serif text-[14px] leading-loose tracking-[0.12em] text-muted">
-        公的統計でたどる、長期の変化。問いを選んで開く。
+        公的統計でたどる、長期の変化。
       </p>
     </header>
   );
