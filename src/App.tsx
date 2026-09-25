@@ -1,36 +1,32 @@
 import { CATALOG, CATEGORIES, type CatalogEntry } from "./catalog.ts";
 
+// 領域の番号は大字で振る。数字よりも静かに並ぶ。
+const CATEGORY_NUMERALS = ["壱", "弐", "参", "肆", "伍", "陸"];
+
+const LINK_TRANSITION =
+  "transition-colors duration-150 ease-[var(--ease-out)]";
+
 export function App() {
   return (
-    <div className="min-h-dvh">
-      <header className="border-b border-rule">
-        <div className="mx-auto w-full max-w-[960px] min-[87.5rem]:max-w-[1280px] px-6 pt-10 pb-8">
-          <p className="text-[11px] tracking-wide text-muted">
-            <a
-              href="https://visualizing.jp/"
-              className="transition-colors duration-150 ease-[var(--ease-out)] hover:text-ink"
-            >
-              visualizing.jp
-            </a>
-          </p>
-          <h1 className="mt-3 text-[28px] leading-tight font-semibold tracking-tight sm:text-[34px]">
-            日本人は、どう生きてきたか
-          </h1>
-          <p className="mt-3 max-w-[36em] text-[14px] leading-relaxed text-muted">
-            公的統計でたどる、長期の変化。問いを選んで開く。
-          </p>
-        </div>
-      </header>
+    <div className="mx-auto flex min-h-dvh w-full max-w-[1440px] flex-col gap-14 px-6 pt-14 sm:px-10 lg:flex-row lg:gap-16 lg:px-20 lg:pt-[120px] min-[87.5rem]:gap-20">
+      <SideTitle />
+      <MobileTitle />
 
-      <main className="mx-auto w-full max-w-[960px] min-[87.5rem]:max-w-[1280px] px-6 py-10">
-        {CATEGORIES.map((cat) => {
+      <main className="flex min-w-0 grow flex-col gap-20 lg:gap-24">
+        {CATEGORIES.map((cat, i) => {
           const items = CATALOG.filter((e) => e.category === cat.id);
           return (
-            <section key={cat.id} className="mb-12 last:mb-0">
-              <h2 className="mb-5 border-t border-rule pt-3 text-[11px] tracking-wide text-muted">
-                {cat.label}
+            <section key={cat.id} className="flex flex-col gap-8 lg:gap-10">
+              <h2 className="flex items-baseline gap-6 font-serif">
+                <span className="text-[14px] text-accent" aria-hidden>
+                  {CATEGORY_NUMERALS[i]}
+                </span>
+                <span className="text-[20px] font-medium tracking-[0.3em] lg:text-[22px]">
+                  {cat.label}
+                </span>
+                <span className="h-px grow self-center bg-rule" aria-hidden />
               </h2>
-              <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 min-[87.5rem]:grid-cols-4">
+              <ul className="grid grid-cols-1 gap-x-8 gap-y-12 min-[30rem]:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 min-[87.5rem]:grid-cols-4">
                 {items.map((entry) => (
                   <li key={entry.slug}>
                     <ProjectCard entry={entry} />
@@ -40,26 +36,74 @@ export function App() {
             </section>
           );
         })}
-      </main>
 
-      <footer className="mx-auto w-full max-w-[960px] min-[87.5rem]:max-w-[1280px] px-6 pt-2 pb-12 text-[11px] leading-relaxed text-faint">
-        公的統計をもとにした長期シリーズのハブです。各ページは独立したサイトです。
-        <a
-          href="https://visualizing.jp/"
-          className="mt-2 block w-fit transition-colors duration-150 ease-[var(--ease-out)] hover:text-muted"
-        >
-          visualizing.jp
-        </a>
-      </footer>
+        <footer className="flex flex-col gap-2 pt-6 pb-24 text-[11px] leading-loose tracking-[0.06em] text-muted">
+          <p>
+            公的統計をもとにした長期シリーズのハブです。各ページは独立したサイトです。
+          </p>
+          <a
+            href="https://visualizing.jp/"
+            className={`w-fit ${LINK_TRANSITION} hover:text-ink`}
+          >
+            visualizing.jp
+          </a>
+        </footer>
+      </main>
     </div>
   );
 }
 
+/** 広い画面: 縦組みのタイトルを左に置き、スクロールしても残す。 */
+function SideTitle() {
+  return (
+    <aside className="sticky top-[120px] hidden shrink-0 flex-row-reverse gap-7 self-start lg:flex">
+      <h1 className="vertical v-title font-serif font-medium">
+        日本人は、
+        <br />
+        どう生きてきたか
+      </h1>
+      <p className="vertical pt-32 font-serif text-[15px] leading-[2] tracking-[0.18em] text-muted">
+        公的統計でたどる、長期の変化。
+        <br />
+        問いを選んで開く。
+      </p>
+      <a
+        href="https://visualizing.jp/"
+        className={`vertical pt-32 text-[11px] tracking-[0.3em] text-accent ${LINK_TRANSITION} hover:text-ink`}
+      >
+        visualizing.jp
+      </a>
+    </aside>
+  );
+}
+
+/** 狭い画面: 縦組みは収まらないので横組みにする。 */
+function MobileTitle() {
+  return (
+    <header className="flex flex-col gap-5 lg:hidden">
+      <a
+        href="https://visualizing.jp/"
+        className={`w-fit text-[11px] tracking-[0.3em] text-accent ${LINK_TRANSITION} hover:text-ink`}
+      >
+        visualizing.jp
+      </a>
+      <h1 className="font-serif text-[30px] leading-snug font-medium tracking-[0.12em] sm:text-[40px]">
+        日本人は、
+        <br />
+        どう生きてきたか
+      </h1>
+      <p className="font-serif text-[14px] leading-loose tracking-[0.12em] text-muted">
+        公的統計でたどる、長期の変化。問いを選んで開く。
+      </p>
+    </header>
+  );
+}
+
 function ProjectCard({ entry }: { entry: CatalogEntry }) {
-  const pending = entry.status === "pending";
+  const pending = entry.status === "pending" || entry.url === null;
   const body = (
-    <div className={pending ? "opacity-30" : undefined}>
-      <div className="card-art mb-4 overflow-hidden">
+    <div className={`flex flex-col gap-4 ${pending ? "opacity-40" : ""}`}>
+      <div className="card-art overflow-hidden">
         <img
           src={entry.art}
           alt=""
@@ -67,50 +111,34 @@ function ProjectCard({ entry }: { entry: CatalogEntry }) {
           height={200}
           loading="lazy"
           decoding="async"
-          className="block h-full w-full object-contain"
+          className="block h-full w-full object-contain transition-transform duration-300 ease-[var(--ease-out)] group-hover:scale-[1.03]"
         />
       </div>
       <p
-        className={`text-[15px] leading-snug font-semibold tracking-tight ${
-          pending ? "text-muted" : "text-ink"
+        className={`font-serif text-[16px] leading-[1.7] font-medium tracking-[0.04em] ${LINK_TRANSITION} ${
+          pending ? "text-muted" : "text-ink group-hover:text-accent"
         }`}
       >
         {entry.title}
       </p>
-      <p className="mt-2 text-[11px] leading-relaxed text-muted">
-        {entry.source}
-        {entry.period !== "—" && (
-          <>
-            <span className="mx-1.5 text-faint" aria-hidden>
-              ·
-            </span>
-            <span className="tnum">{entry.period}</span>
-          </>
-        )}
+      <p className="flex flex-wrap gap-x-3 text-[11px] tracking-[0.04em] text-muted">
+        <span>{entry.source}</span>
+        {entry.period !== "—" && <span className="tnum">{entry.period}</span>}
+        {pending && <span className="text-faint">準備中</span>}
       </p>
-      {pending && (
-        <p className="mt-2 text-[10px] tracking-wide text-faint">準備中</p>
-      )}
     </div>
   );
 
-  const shell =
-    "group relative block h-full border border-rule bg-transparent p-4 transition-[border-color,transform] duration-150 ease-[var(--ease-out)] " +
-    "before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-left before:scale-x-0 before:bg-accent before:transition-transform before:duration-150 before:ease-[var(--ease-out)] " +
-    (pending
-      ? "cursor-default"
-      : "hover:border-rule-strong hover:before:scale-x-100 active:scale-[0.99]");
-
   if (pending || entry.url === null) {
     return (
-      <div className={shell} aria-disabled="true">
+      <div className="block cursor-default" aria-disabled="true">
         {body}
       </div>
     );
   }
 
   return (
-    <a href={entry.url} className={shell}>
+    <a href={entry.url} className="group block active:scale-[0.99]">
       {body}
     </a>
   );
