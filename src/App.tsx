@@ -1,4 +1,5 @@
 import { CATALOG, CATEGORIES, type CatalogEntry } from "./catalog.ts";
+import { VISUALIZING_URL, VisualizingMark } from "./Brand.tsx";
 
 // 領域の番号は大字で振る。数字よりも静かに並ぶ。
 const CATEGORY_NUMERALS = ["壱", "弐", "参", "肆", "伍", "陸"];
@@ -42,10 +43,18 @@ export function App() {
             公的統計をもとにした長期シリーズのハブです。各ページは独立したサイトです。
           </p>
           <a
-            href="https://visualizing.jp/"
-            className={`w-fit ${LINK_TRANSITION} hover:text-ink`}
+            href={VISUALIZING_URL}
+            className={`mt-4 inline-flex w-fit items-center gap-2.5 ${LINK_TRANSITION} hover:text-ink`}
           >
-            visualizing.jp
+            <VisualizingMark className="h-8 w-auto" />
+            <span className="flex flex-col leading-tight">
+              <span className="text-[10px] tracking-[0.08em] text-faint">
+                Visualized by
+              </span>
+              <span className="text-[13px] font-medium tracking-[0.04em]">
+                visualizing.jp
+              </span>
+            </span>
           </a>
         </footer>
       </main>
@@ -66,10 +75,11 @@ function SideTitle() {
         公的統計でたどる、長期の変化。
       </p>
       <a
-        href="https://visualizing.jp/"
-        className={`vertical pt-32 text-[11px] tracking-[0.3em] text-accent ${LINK_TRANSITION} hover:text-ink`}
+        href={VISUALIZING_URL}
+        className={`flex flex-col items-center gap-3 pt-32 text-[11px] tracking-[0.3em] text-muted ${LINK_TRANSITION} hover:text-ink`}
       >
-        visualizing.jp
+        <VisualizingMark className="h-7 w-auto" />
+        <span className="vertical">visualizing.jp</span>
       </a>
     </aside>
   );
@@ -80,9 +90,10 @@ function MobileTitle() {
   return (
     <header className="flex flex-col gap-5 lg:hidden">
       <a
-        href="https://visualizing.jp/"
-        className={`w-fit text-[11px] tracking-[0.3em] text-accent ${LINK_TRANSITION} hover:text-ink`}
+        href={VISUALIZING_URL}
+        className={`inline-flex w-fit items-center gap-2 text-[11px] tracking-[0.3em] text-muted ${LINK_TRANSITION} hover:text-ink`}
       >
+        <VisualizingMark className="h-6 w-auto" />
         visualizing.jp
       </a>
       <h1 className="font-serif text-[30px] leading-snug font-medium tracking-[0.12em] sm:text-[40px]">
