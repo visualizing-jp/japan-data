@@ -1,4 +1,5 @@
 import { CATALOG, CATEGORIES, type CatalogEntry } from "./catalog.ts";
+import { CardIcon } from "./card-icons.tsx";
 import { VISUALIZING_URL, VisualizingMark } from "./Brand.tsx";
 
 // 領域の番号は大字で振る。数字よりも静かに並ぶ。
@@ -112,16 +113,10 @@ function ProjectCard({ entry }: { entry: CatalogEntry }) {
   const pending = entry.status === "pending" || entry.url === null;
   const body = (
     <div className={`flex flex-col gap-4 ${pending ? "opacity-40" : ""}`}>
-      <div className="card-art overflow-hidden">
-        <img
-          src={entry.art}
-          alt=""
-          width={320}
-          height={200}
-          loading="lazy"
-          decoding="async"
-          className="block h-full w-full object-contain transition-transform duration-300 ease-[var(--ease-out)] group-hover:scale-[1.03]"
-        />
+      <div className="card-art flex items-center justify-center overflow-hidden">
+        <span className="transition-transform duration-300 ease-[var(--ease-out)] group-hover:scale-[1.03]">
+          <CardIcon slug={entry.slug} />
+        </span>
       </div>
       <p
         className={`font-serif text-[16px] leading-[1.7] font-medium tracking-[0.04em] ${LINK_TRANSITION} ${

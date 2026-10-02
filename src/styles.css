@@ -61,10 +61,16 @@
   }
 }
 
-/* A quiet plate behind each original line drawing keeps fine strokes readable. */
+/* 線アイコンの地。細い線が紙の上で読めるよう、一段だけ沈める。 */
 .card-art {
   aspect-ratio: 8 / 5;
   background: var(--color-plate);
+}
+
+/* Lucide の線を拡大しても、画面上の太さを 1px に保つ。 */
+.card-mark,
+.card-mark * {
+  vector-effect: non-scaling-stroke;
 }
 
 .vertical {
