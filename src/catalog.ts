@@ -8,7 +8,7 @@
  * それ以外は ../japan-data-{slug}/
  */
 
-export type CategoryId = "life" | "work" | "home" | "justice";
+export type CategoryId = "life" | "work" | "home" | "justice" | "sea";
 
 export type ProjectStatus = "published" | "pending";
 
@@ -28,6 +28,7 @@ export const CATEGORIES: { id: CategoryId; label: string }[] = [
   { id: "work", label: "学ぶ・働く" },
   { id: "home", label: "暮らす・移る" },
   { id: "justice", label: "裁く・守る" },
+  { id: "sea", label: "海を越える" },
 ];
 
 export const CATALOG: CatalogEntry[] = [
@@ -297,5 +298,27 @@ export const CATALOG: CatalogEntry[] = [
     status: "published",
     url: "https://japan-data-juvenile.visualizing.jp/",
     art: "/art/juvenile.svg",
+  },
+
+  // —— 海を越える ——
+  {
+    slug: "overseas",
+    title: "日本人は海外のどこに住んできたか",
+    source: "海外在留邦人数調査統計",
+    period: "1991–2025",
+    category: "sea",
+    status: "published",
+    url: "https://japan-data-overseas.visualizing.jp/",
+    art: "/art/overseas.svg",
+  },
+  {
+    slug: "outbound",
+    title: "日本人はどれだけ海外へ出てきたか",
+    source: "出入国管理統計・JNTO",
+    period: "1964–2025",
+    category: "sea",
+    status: "published",
+    url: "https://japan-data-outbound.visualizing.jp/",
+    art: "/art/outbound.svg",
   },
 ];

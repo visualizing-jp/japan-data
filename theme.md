@@ -63,3 +63,12 @@
 | registry | 日本の土地と建物はどう名義が動いてきたか | `../japan-data-registry/` | https://github.com/visualizing-jp/japan-data-registry | https://japan-data-registry.visualizing.jp | 公開 |
 | juvenile | 日本では非行少年をどう処遇してきたか | `../japan-data-juvenile/` | https://github.com/visualizing-jp/japan-data-juvenile | https://japan-data-juvenile.visualizing.jp | 公開 |
 | rights | 日本ではどんな人権侵害が届けられてきたか | `../japan-data-rights/` | https://github.com/visualizing-jp/japan-data-rights | https://japan-data-rights.visualizing.jp | 第2波 |
+
+## 海を越える（2）
+
+在留は3か月以上の人数、出国は出国の回数。互いに内訳ではない。
+
+| slug | タイトル | ローカル | GitHub | 想定サブドメイン | ステータス |
+| ---- | -------- | -------- | ------ | ---------------- | ---------- |
+| overseas | 日本人は海外のどこに住んできたか | `../japan-data-overseas/` | https://github.com/visualizing-jp/japan-data-overseas | https://japan-data-overseas.visualizing.jp | 公開 |
+| outbound | 日本人はどれだけ海外へ出てきたか | `../japan-data-outbound/` | https://github.com/visualizing-jp/japan-data-outbound | https://japan-data-outbound.visualizing.jp | 公開 |
